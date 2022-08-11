@@ -1,0 +1,97 @@
+#baner{
+    background-color: blue;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.text{
+    width: 95%;
+    padding-left: 20px;
+}
+.text h1{
+    font-size: 60px;
+}
+.text a{
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    background-color: #E02C6D;
+    padding: 8px;
+}
+.baner-photo{
+    width: 100%;
+    padding-top: 40px;
+}
+.baner-photo img{
+    height: 100%;
+    width: 100%;
+}
+#players{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px;
+    margin-top: 50px;
+}
+.player{
+    width: 90%;
+    border: 1px dotted black ;
+    padding: 6px;
+    box-shadow: 10px 10px 10px gray;
+}
+
+.player-info{
+    text-align: justify;
+
+}
+.player-info h2{
+    text-align: center;
+}
+.player-photo{
+    text-align: center;
+}
+.player-photo img{
+    width: 300px;
+    height: 256px;
+}
+#heighlight{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+footer{
+    text-align: center;
+}
+footer img{
+    height: 80px;
+    width: 250px;
+}
+@media only screen and (max-width:688px) {
+    #baner{
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+    }
+    #players{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    #heighlight{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    body{
+        margin: 0;
+    }
+}
+
+@media only screen and  (max-width:992px) {
+    #baner{
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+    }
+    #players{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    #heighlight{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    body{
+        margin: 0;
+    }
+}
